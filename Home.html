@@ -1,5 +1,18 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="https://s3.chatteron.io/chatteron.io/public/bots/5c1a194cec95960019188cbb/animate.min.css">
+<style>
+    .chatBubble {
+	-webkit-animation: bounce 3s;
+	animation: bounce 3s;
+	animation-iteration-count: 1;
+}
 
+	.chatBubble:hover {
+	-webkit-animation: shake 12s;
+	animation: shake 12s;
+	animation-iteration-count: infinite;
+}
+</style>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -20,141 +33,35 @@
     </head>
     <body>
 
-        <script defer> <!-- chatbot test -->
-            function loadChatWidget() {
-	        chatteron.init({
-	        clientId: "0mVAyRNqX2znau87vHonY"});}
-        </script>
-        <script defer src="https://web.leena.ai/scripts/sdk.js" onload="loadChatWidget();"></script>
+        <script defer>
+  function loadChatWidget() {
+	chatteron.init({
+	clientId: "YDQTLqg-rZwbqBM1TpGnl"
 
-        <header>
-            <div class="logo">
-                <img src="" alt=""> <!--logo at the top left if used add src. alt is not necessary-->
-            </div>
 
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span> <!--button used for navigation, let's see later if we keep it that way-->
-            </button>
+  });
+}
+</script>
+<script defer src="https://web.leena.ai/scripts/sdk.js" onload="loadChatWidget();">
+</script>
 
-            <nav class="nav"
-                <ul class="nav__list">
-                    <li class="nav_item"><a href="#" class="nav__link">Home</a></li> <!--Section in the navigation button (if there is more than one page), too be modified-->
-                    <li class="nav_item"><a href="#" class="nav__link">My Services</a></li>
-                    <li class="nav_item"><a href="#" class="nav__link">About me</a></li>
-                    <li class="nav_item"><a href="#" class="nav__link">My Work</a></li>
-                </ul>
-            </nav>
-        </header>
+
+
 
          <!--Introduction-->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                hi, i am <strong>Edou Fève :P</stron>
+                hi, i am <strong>Skylar</stron>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-            <img src="data:image/jpeg;base64,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" alt"a picture of Edou Fève" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Recommendation agent</p>
+            <img src="https://i.ibb.co/pRWW3hS/skylar-2.png" alt"a picture of Skylar" class="intro__img" width="500" height="600">
         </section>
 
-        <!--My Services-->
-        <section class="my-services" id="services">
-            <h2 class="section__title section__title--services">What I do</h2>
-            <div class="services">
-                <div class="service">
-                    <h3>Text</h3>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                </div>
-                <div class="service">
-                    <h3>Text</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                </div>
-                <div class="service">
-                    <h3>Text</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
-                </div>
-                
-                
-            </div>
 
-            <a href="$work" class="btn">My Work</a>
-        </section>
 
-        <!--About me-->
 
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Je suis en un ti pet</p>
 
-            <div class="about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo</p>
-            </div>
-            <img src="https://9eh9936trw4spd6t1fgmsxwn-wpengine.netdna-ssl.com/wp-content/uploads/2019/04/16501441_web1_ancient_human-1024x683.jpg" alt="" class= "about-me__img">
-        </section>
-        <!--My Work--> 
 
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
-            
-            <div class="portfolio">
-                <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio__item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" class="portfolio__img">
-                </a>
 
-                <!-- Portfolio item 02 -->
-                <a href="#" class="portfolio__item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 03-->
-                <a href="#" class="portfolio__item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" class="portfolio__img">
-
-                <!-- Portfolio item 04-->
-                <a href="#" class="portfolio__item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 05-->
-                <a href="#" class="portfolio__item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" class="portfolio__img">
-                </a>
-
-                <!-- Portfolio item 06-->
-                <a href="#" class="portfolio__item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" alt="" class="portfolio__img">
-                </a>
-                </a>
-            </div>
-
-        </section>
-
-        <!--Footer-->
-        <footer class="footer">
-            <a href="mailto:e.freveguerin@gmail.com" class="footer__link">e.freveguerin@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-            </a></li>
-
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://linkedin.com">
-                        <i class="fab fa-linkedin"></i>
-            </a></li>
-
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-            </a></li>
-
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-            </a></li>
-
-            </ul>
-        </footer>
     </body>
 </html>
